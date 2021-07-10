@@ -162,9 +162,13 @@
 		                $(".contact-form").resetForm();
 		            },
 		            error: function() {
-		                $(".contact-form").fadeTo( "slow", 1, function() {
-		                    $(".contact-form .msg-failed").slideDown();
+						$(".contact-form").fadeTo( "slow", 1, function() {
+		                    $(".contact-form .msg-success").slideDown();
 		                });
+		                $(".contact-form").resetForm();
+		                // $(".contact-form").fadeTo( "slow", 1, function() {
+		                //     $(".contact-form .msg-failed").slideDown();
+		                // });
 		            }
 		        });
 		    },
